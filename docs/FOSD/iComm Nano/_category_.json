@@ -1,0 +1,8 @@
+{
+  "label": "iComm Nano",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "an opensource modular communicator"
+  }
+}
