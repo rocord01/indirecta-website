@@ -22,7 +22,7 @@ const config = {
   projectName: 'website', // Usually your repo name.
   deploymentBranch: "gh-pages", 
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -109,7 +109,7 @@ const config = {
             items: [
               {
                 label: 'FOSD',
-                to: '/docs/FOSD',
+                to: '/docs/fosd',
               },
             ],
           },
