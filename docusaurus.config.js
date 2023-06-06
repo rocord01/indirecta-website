@@ -20,7 +20,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Indirecta-Technologies', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
-  deploymentBranch: "gh-pages",
+  deploymentBranch: "gh-pages", 
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
