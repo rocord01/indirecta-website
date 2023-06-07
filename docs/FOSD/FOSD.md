@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-slug: /category/fosd
+slug: /category/-fosd
 ---
 
-# 📟 Free Open Source Devices
+# ℹ️ Info
 
 ## 📖 What's a FOSD?
 A Free Open Source Device is a new "state of the art" product type for the Roblox Tech community, it's:
