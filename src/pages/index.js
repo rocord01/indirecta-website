@@ -23,8 +23,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Website`}
+      description="Independent and Decentralized Roblox Tech Company">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
