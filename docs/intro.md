@@ -18,3 +18,9 @@ With our commitment to creativity, accessibility, and open collaboration, Indire
 - Purchase a donation developer product in the [store](https://www.roblox.com/games/8290643959/Indirecta-Hub)
 - Stay AFK with Roblox Premium in the [hub](https://www.roblox.com/games/8290643959/Indirecta-Hub)
 - Get something for yourself from [our game](https://www.roblox.com/games/8290643959/Indirecta-Hub) (affiliate commission) 
+
+## 🎯 Objectives
+- [x] Release iComm FOSD Platform (public alpha) 06/09/2023 (mm/dd/yyyy)
+- [ ] Release iSense FOSD Mesh Network (public alpha) 06/09/2023
+- [ ] Open source Rufus + v2? 06/09/2023
+- [ ] Rewrite Xinu (& opensource) 06/09/2023

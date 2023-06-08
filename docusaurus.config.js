@@ -64,6 +64,14 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      announcementBar: {
+        id: 'beta_testers',
+        content:
+          '🧪 We are currently looking for beta testers, <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/mn1Jcr7eQtgQP1aA9">get involved!</a>',
+        backgroundColor: '#124ce6',
+        textColor: '#000000',
+        isCloseable: true,
+      },
       navbar: {
         title: '',
         logo: {
