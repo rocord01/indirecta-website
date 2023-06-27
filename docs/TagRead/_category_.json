@@ -1,0 +1,8 @@
+{
+  "label": "🚪 TagRead",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "an opensource door access control interface"
+  }
+}

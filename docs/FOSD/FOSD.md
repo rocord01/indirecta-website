@@ -22,6 +22,8 @@ And now here I am, working on small, cute, modular and weird 2d devices on a gam
 ## What's this repository for then?
 As Indirecta really likes cool open source stuff, we'll be releasing under this repository all the FOS modular devices we'll ever make, organized in folders, with appropriate documentation.
 
+The FOSD section on this website exists mainly to document FOSD Handhelds, like the iComm and iComm Nano. Other free open source devices like Rufus, iSense and TagRead are not part of this section.
+
 ## ⚠️ License
 
 The FOSD Project by Indirecta is released under the MIT license.

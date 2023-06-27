@@ -1,0 +1,8 @@
+{
+  "label": "🍃 iSense",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "an opensource modular environmental sensor mesh network"
+  }
+}
