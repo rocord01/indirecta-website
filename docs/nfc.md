@@ -81,15 +81,16 @@ Decrypts an encrypted string using a vector-based XOR decryption algorithm.
 This function takes an encrypted string and a Vector3 object as input. It performs a character-wise XOR decryption on the string using the key values from the Vector3 object. Each character of the encrypted string is XORed with the corresponding key part, and the decrypted characters are concatenated to form the original string.
 
 The decryption algorithm works in a similar way to the encryption algorithm:
-	1. The encrypted string is iterated character by character.
-	2. The ASCII value of the character is obtained using string.byte.
-	3. The key part (X, Y, or Z) is selected based on the keyIndex, which cycles through the key values.
-	4. The character value is XORed with the key part value using bit32.bxor.
-	5. The decrypted character is converted back to a string using string.char.
-	6. The decrypted character is appended to the decrypted string.
-	7. The keyIndex is incremented and wrapped around to 1 if it exceeds 3.
-	8. Steps 2-7 are repeated for each character in the encrypted string.
-	9. The final decrypted string is returned.
+1. The encrypted string is iterated character by character.
+2. The ASCII value of the character is obtained using string.byte.
+3. The key part (X, Y, or Z) is selected based on the keyIndex, which cycles through the key values.
+4. The character value is XORed with the key part value using bit32.bxor.
+5. The decrypted character is converted back to a string using string.char.
+6. The decrypted character is appended to the decrypted string.
+7. The keyIndex is incremented and wrapped around to 1 if it exceeds 3.
+8. Steps 2-7 are repeated for each character in the encrypted string.
+9. The final decrypted string is returned.
+
 </details> 
 
 ### Example usage:

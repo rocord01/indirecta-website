@@ -3,9 +3,11 @@ sidebar_position: 7
 ---
 
 # 🏬 Applications
-Indirecta ships each iComm or communicator device with roughly 5 default applications, these applications are called core apps, similiar to GNOME Desktop Environment's Core and Circle apps.  
-This article aims to describe best all the core applications.  
-More complex core applications like the Radiocomm app can have their own article.
+
+## Core Apps
+Indirecta ships each iComm or communicator device with roughly 6 default applications, these applications are called core apps, similiar to GNOME Desktop Environment's Core and Circle apps.  
+This section aims to describe best all the core applications.  
+More complex core applications like the Radiocomm app can have their own page.
 
 # 🛰️ Radiocomm `Radio`
 
@@ -17,10 +19,17 @@ More complex core applications like the Radiocomm app can have their own article
 >Radio-like encrypted messaging app made with ❤️ by Indirecta  
 >Allows the user to change frequency up/down 1/.5 MHz, messages are sent in different MessagingService topics depending on frequency, and encrypted with frequency and a key derived from an optional secret using [Indirecta's public encryption algorithm](https://github.com/Indirecta-Technologies/indirectaSEA)  
 
+:::danger
+
+As string encryption is also used on messages without custom keys using their frequency, the Roblox filter cannot be implemented, and we are not responsible for inadequate usage of this application among common game players and unexperienced staff.  
+You can GET BANNED from Roblox for using unfiltered chats.  
+We have implemented a setting `ExplicitFiltering` in both the Client and Server scripts (both must be the same) allowing game developers to disable all encryption options and techniques that is turned on by default in versions >1.3.7
+
+:::
+
 - Use mouse scroll wheel to scroll, if not available (disabled by group/developer), use the `UP` and `DOWN` iComm Keys  
 - When the app is launched, an extension of the status bar (macro title) featuring PTT/Mic status and current frequency
 - For developers or advanced users, the custom iSEA String Key option in the freq. menu can be toggled using `LFN`; there is also a debug menu featuring experimental data that can be toggled using `RFN`
-- As string encryption is also used on messages without custom keys using their frequency, the Roblox filter cannot be implemented, and we are not responsible for inadequate usage of this application among common game players and not experienced staff. We have implemented a setting in both the Client and Server scripts (both must be either false or true) allowing game developers to disable all encryption options and techniques.
 - Since the PTT/Microphone message capture technique uses Roblox's .Chatted event, when sending a message using Radiocomm, it will also be shown in Roblox chat. That is why we suggest game developers who use Radiocomm to remove chat history, allowing only bubble chat (your messages will still be seen if you're close, but it's also realistic this way)
 
 # 🧭 Compass `Compass`
@@ -52,7 +61,15 @@ More complex core applications like the Radiocomm app can have their own article
 >Allows 5 different flashlight on-off intervals, 5 flashlight brightness levels (brightness-range tradeoff configurations) and an emergency SOS interval  
 >As iComm developers may develop directly with the iComm firmware (GUI) directly in StarterGui, without it being linked to any hardware (tool that toggles GUI), the Torch app displays a warning screen when it detects that there isn't any iComm tool or flashlight linked as a peripheral to use
 
+# 📶 NFC/Near Field Communiation `NFC`
 
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/nfc_1.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/nfc_2.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/nfc_3.png" width="200px"/>
+
+>Core application with tool nfc peripheral integration  
+>Allows client to transmit any data (string) from client to server and receive it from other clients (through a server side script integration similar to Radiocomm)
+>As iComm developers may develop directly with the iComm firmware (GUI) directly in StarterGui, without it being linked to any hardware (tool that toggles GUI), the NFC app displays a warning screen when it detects that there isn't any iComm tool or NFC antenna linked as a peripheral to use
 
 # 📈 Sensors `AtmosData`
 
@@ -78,10 +95,8 @@ More complex core applications like the Radiocomm app can have their own article
 - The user is greeted with a red on black selection menu. Use the `UP` and `DOWN` iComm Keys to scroll and `OK` to choose.  The only choice available on the current version is the Applications debug menu. 
 - After selecting the Applications menu, the user can scroll using the previous keys or the mouse scroll wheel, and select an application.
 - After selecting an application, the user will be able to edit live module "self" data such as AppInfo, Configuration strings and booleans.
-- An error simulator tool and a keyboard testing tool have been since added to the debug kit
+- An error simulator tool and a keyboard testing tool have been since added to the debug kit, along with an option that automatically opens the Roblox console
 
-
-
-## ⚠️ License
-
-The iComm and any other proprietary related devices by Indirecta are released under the GNU GPL v3 license.
+## Circle Apps
+The iComm FOSD's GitHub page features download pages for all official but non-essential "Circle" Apps described below.
+This section aims to describe best all the Circle applications that aren't included by default in iComm Releases.  

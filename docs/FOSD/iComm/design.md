@@ -26,3 +26,18 @@ sidebar_position: 2
   
   `LFN` `RFN` Respectively left and right function keys, similiar in purpose to the software keys, generally reserved for high-level app purposes like changing map display mode, opening a debug menu, etc.
 
+## Error Screen
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/sample_error.png" width="350px"/>
+
+- ### `QR` 
+  QR Code with internal error message
+- ### `Hash` 
+  Hash/checksum of internal error message
+- ### `Logo` 
+- ### `Text` 
+
+:::info
+
+It is possible to close the error message by restarting the iComm, to do this press rapidly the `Shutdown` button until the Indirecta boot logo appears
+
+:::
