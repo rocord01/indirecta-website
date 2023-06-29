@@ -7,10 +7,12 @@ slug: /category/-tagread
 
 ## 📖 What's TagRead?
 TagRead is the newest independent access control solution by Indirecta.
-It's essentially a keypad/card reader that supports 3 modes:
-- Clock/NFC Reader
-- Passcode/NFC Reader
-- One Time Pass/NFC Reader
+It's essentially a keypad/card reader with distinct modes:
+- Off/Clock/NFC
+- Off/Numpad/NFC
+- Off/TOTP/NFC
+- Clock/Numpad/NFC
+- Clock/TOTP/NFC
   
 <img alt="tagread design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/tagread/media/idle.png" height="300px"/> 
 <img alt="tagread design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/tagread/media/numpad.png" height="300px"/> 

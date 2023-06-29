@@ -24,3 +24,6 @@ With our commitment to creativity, accessibility, and open collaboration, Indire
 - [ ] Release iSense FOSD Mesh Network (public alpha) 06/09/2023
 - [ ] Open source Rufus + v2? 06/09/2023
 - [ ] Rewrite Xinu (& opensource) 06/09/2023
+- [x] Release TagRead FOSD Product (beta) 06/30/2023
+- [ ] Document all iComm Circle Apps 06/30/2023
+- [ ] Work on Indirecta stores and offices for affiliate groups 06/30/2023
