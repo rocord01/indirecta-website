@@ -31,4 +31,4 @@ The configuration features two functions, `UNLOCK` and `RELOCK`.
 
 The FOSD Project by Indirecta is released under the MIT license.
 
-### [GitHub Repo](https://github.com/Indirecta-Technologies/fosd)
+### [GitHub Repo](https://github.com/Indirecta-Technologies/fosd/blob/main/tagread/)

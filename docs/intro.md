@@ -27,3 +27,5 @@ With our commitment to creativity, accessibility, and open collaboration, Indire
 - [x] Release TagRead FOSD Product (beta) 06/30/2023
 - [ ] Document all iComm Circle Apps 06/30/2023
 - [ ] Work on Indirecta stores and offices for affiliate groups 06/30/2023
+- [ ] Indirecta Axle: FOSD Automatic IO for fire alarms to connect with dialer v2
+- [ ] Indirecta ToolChain: Single Tool Keychain to equip multiple tools as 1 tool in one keychain

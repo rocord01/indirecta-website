@@ -100,3 +100,73 @@ We have implemented a setting `ExplicitFiltering` in both the Client and Server 
 ## Circle Apps
 The iComm FOSD's GitHub page features download pages for all official but non-essential "Circle" Apps described below.
 This section aims to describe best all the Circle applications that aren't included by default in iComm Releases.  
+
+# 🔐 2FA `2fac`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/2fa_1.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/2fa_2.png" width="200px"/>
+
+>2 factor authenticator similar to Google Authenticator and Authy. Generates one time passcodes depending on a preconfigured secret, usable with other 2fa enabled products like
+>Indirecta TagRead readers, and even online services like Discord!
+
+- The main page displays all available buttons with chosen emojies, and a circular progress bar representing time left.
+- Clicking on one of the circular progress bar buttons leads to the code page, where the full name, emoji, code and progress bar are shown.
+- Pressing back will return to the main page.
+
+# 📚 Books `Books`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/books_1.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/books_2.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/books_3.png" width="200px"/>
+
+> Experimental Book Reader Application for the iComm
+
+# 🌸 C's GOL `ConwaysGOL`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/cgol_1.png" width="200px"/>
+
+> Conway's Game of Life simulation for the iComm.
+> Ported from an uncopylocked CGOL Game released on the devforum.
+
+# ❔ Calibrator `EMFCalibrator`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/emfcalibrator_1.png" width="200px"/>
+
+> EMF Calibrator for tools with limited indicator LEDs like the Indirecta Handheld EMF Tester.
+
+- Calibrates values using softkeys and function keys.
+- Uses the Sensors module to test EMF
+
+# 🕹️ LuaGB `LuaGB`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/luagb_1.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/luagb_2.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/luagb_3.png" width="200px"/>
+
+> A port/fork of the rLuaGB Project to the iComm
+
+- Keypress Up Down mechanics are different, TO:DO Use Up and Down events instead of simulating like in FOSDebug Keytest App.
+
+# 🎹 Keyboard `Piano`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/piano_1.png" width="200px"/>
+
+> A musical keyboard "game" application
+
+- Use the soft keys to transpose octave
+
+# ❔ Sprint Pager `RecordSprint`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/sprint_1.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/sprint_2.png" width="200px"/>
+
+> A port of the record Sprint Pager protocol to the iComm with multipage and notification functionality.
+
+- The inside the of the app (module) is structured similarly to that of a sprint pager tool, which makes setup the same as regular devices.
+
+# ❔ REMiner `RemoteEventMiner`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/reminer_1.png" width="200px"/>
+
+> A highly experimental "crypto miner" simulation that does cool stuff with hashes and remote event traffic.
+> Contains inside a server mutex that assigns jobs to all clients, it does not send out rewards.
+
+- Press the START OK button to start handling jobs
+
+# 🌙 Sun & Moon `SunMoon`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/sunmoon_1.png" width="200px"/>
+
+> Experimental application that could have been a core app. Displays a small sun and moon chart with some info that is currently fixed because Roblox  
+> sun times do not change depending on time of year

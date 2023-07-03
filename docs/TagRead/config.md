@@ -162,8 +162,63 @@ Make sure your `UNLOCK` & `RELOCK` are working! Infinite yields caused by code u
 TagRead to freeze after attemtping to unlock or relock!
 
 :::
+- ### 💠 `_INTEGRATION_ON_NFC_TOUCH` **function**
+  Fired when any part touches the NFC Antenna (created only if NFC is enabled)
+  This function can be used to integrate other card protocols and make them compatible with TagRead,
+  implement whitelists, blacklists, the possibilities are endless!
+
+  If the function returns nil, the code will continue executing the 💠 NFC Authentication procedure  
+  If it returns true, the reader will ✅ unlock the connected system, and false locks it as a ❌ failed auth attempt.  
+  If the function returns something that's neither of those (e.g. an empty string), the NFC Authentication will halt,  
+  but TagRead won't show any unlock or fail message.
 
 ## 🔈 Add sound to TagRead
-TagRead doesn't plan to include any built-in audios or media.
+TagRead doesn't plan to include any built-in audios or media.  
 To add sound effects, you will have to create a `Sound` instance, configure it, parent it to any part inside TagRead,  
 and handle sound playing inside the `UNLOCK` & `RELOCK` functions.
+
+## 💠 Use the On NFC Touch Integration
+This section will include some examples for _ON_NFC_TOUCH integrations:  
+
+### 🔮 Try your luck!
+This integration will unlock the connected system with a random 50/50 chance!  
+```js
+["_INTEGRATION_ON_NFC_TOUCH"] = function(self, script, part, config, notify)
+	-- Fired when NFC Antenna is touched by any part
+	notify(true, "🔮", "Let's test your luck!", "")
+	wait(2)
+	if math.random(0,1) > 0 then return false end
+
+	return true
+end,
+```
+### 🪪 Whitelist
+This integration will halt the NFC Authentication procedure if the player is not in the whitelist! 
+```js
+["_INTEGRATION_ON_NFC_TOUCH"] = function(self, script, part, config, notify)
+	-- Fired when NFC Antenna is touched by any part
+	local whitelist = {"Lxi099"}
+
+	local function FindPlayerAncestor(part)
+		local parent = part.Parent
+		if parent == nil then
+			return nil
+		end
+		if parent:FindFirstChild("Humanoid") then
+			return game:GetService("Players"):GetPlayerFromCharacter(parent)
+		elseif parent:IsA("DataModel") then
+			return nil
+		else
+			return FindPlayerAncestor(parent)
+		end
+	end
+
+	local Player = FindPlayerAncestor(part)
+	if Player and table.find(whitelist, Player.Name) then 
+		return nil -- Continue with auth procedure
+	else
+		return "" -- Do absolutely nothing if the player is not whitelisted
+	end
+end,
+```
+
