@@ -35,11 +35,19 @@ This document will document all TagRead configuration sections
   true
   ```
   Whether or not to listen passively for NFC-enabled keycards, fobs and devices. Turning this off will completely disable NFC functionality.  
-- ### `NFC_KEY` **string**
+- ### `NFC_KEY` **table**
   ```js
-  "1234"
+  {"1234"}
   ```
-  The secret key transmitted via NFC that should automatically unlock the connected doors or devices  
+  The secret keys transmitted via NFC that should automatically unlock the connected doors or devices.
+  :::caution
+
+  Make sure to use a very long and unique secret key that will be the same contained in NFC Cards alike.  
+  Since the NFC Protocol communicates from client to server, it allows for clients to send whatever they want.  
+  Creating endless possibilities for integrations, and unfortunately also allowing key bruteforcing.  
+  Future TagRead versions might reject NFC Keys that have low shannon entropy values.  
+
+  :::
 - ### `NFC_MAXWAIT` **number**
   ```js
   8
@@ -90,11 +98,11 @@ Allows you to change the most important display strings
   false
   ```
   Whether or not to enable number keypad mode, this will turn on instead of the clock and room name if `FORCE_CLOCK` is set to false.  
-- ### `NUM_CODE` **string**
+- ### `NUM_CODE` **table**
   ```js
-  "1234"
+  {"1234"}
   ```
-  A 6-10 digit pin. Players will have to input it correctly to unlock the system.  
+  One or more 6-10 digit pins. Players will have to input one of the codes correctly to unlock the system.  
   If `NUM_EXTRA_KEYS` is not enabled, this string of numbers should not contain 0.
 - ### `NUM_WAIT` **number**
   ```js
@@ -222,3 +230,12 @@ This integration will halt the NFC Authentication procedure if the player is not
 end,
 ```
 
+## ❌ Error Screen
+<img alt="tagread design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/tagread/media/error.png" height="200px"/>  
+
+When a critical error is encountered, TagRead will completely halt it's own script to prevent security issues from arising.  
+The error screen contains similarly to other Indirecta products like the iComm, a QR Code and error hash to facilitate sharing.  
+Please send any unknown error screens over in a private ticket in our Discord server.  
+
+> It is speculated that an error could occur between an unlock and relock cycle. This could leave the TagRead reader defenseless and the door unlocked.  
+> It looks like this is impossible at the moment because of some countermeasures, but if it somehow happens, please also open a ticket.  
