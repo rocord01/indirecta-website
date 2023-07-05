@@ -83,6 +83,17 @@ We have implemented a setting `ExplicitFiltering` in both the Client and Server 
 - Use mouse scroll wheel to scroll, if not available (disabled by group/developer), use the `UP` and `DOWN` iComm Keys  
 - When the app is launched, an extension of the status bar featuring ping connectivity bars and a favorite measurement is added, that is configurable through the application module configuration
 
+# 🛩️ Attitude `AttitudeIndicator`
+
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/attitude_1.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/attitude_2.png" width="200px"/>
+
+>Application displaying iComm sensor attitude data as artifical horizon/gyro/attitude indicator. Useful for Ro-Aviation  
+>Displays X and Z orientation  
+
+- There is no in-app interaction. Press `Back` or `Menu` to exit after usage.  
+- If app use-case is too specific, you are free to delete the app module or move it somewhere to hide the app.
+
 # 🐞 Indirecta Free Open Source Device Debug Kit `FOSDebug`
 <img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/fosdebug_1.png" width="200px"/>
 <img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/fosdebug_2.png" width="200px"/>
