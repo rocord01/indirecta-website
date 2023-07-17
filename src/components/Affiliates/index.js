@@ -23,6 +23,16 @@ const AffiliateList = [
     image: 'img/partners/A.R.T.S._LABS_Logo.png',
     roblox: 'https://www.roblox.com/groups/15202088/A-R-T-S-Laboratories',
   }, 
+  {
+    title: 'Runway Studios',
+    image: 'img/partners/RWStudios_Logo_nobg.png',
+    roblox: 'https://www.roblox.com/groups/16435914/RW-Runway-Studios',
+  },
+  {
+    title: 'Scada',
+    image: 'img/partners/Scada_Logo.png',
+    roblox: 'https://www.roblox.com/groups/5791519/Scada-Control-Systems',
+  },
 ];
 
 function Feature({image, title, roblox}) {

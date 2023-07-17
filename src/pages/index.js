@@ -13,7 +13,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-      <img src="/website/img/indirecta_logo_medium500_withPill.png" alt={siteConfig.title} class="hero__title"></img>
+      <img src="/img/indirecta_logo_medium500_withPill.png" alt={siteConfig.title} class="hero__title"></img>
         <p className="hero__title">{siteConfig.tagline}</p>
       </div>
     </header>

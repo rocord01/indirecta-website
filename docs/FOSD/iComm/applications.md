@@ -31,6 +31,8 @@ We have implemented a setting `ExplicitFiltering` in both the Client and Server 
 - When the app is launched, an extension of the status bar (macro title) featuring PTT/Mic status and current frequency
 - For developers or advanced users, the custom iSEA String Key option in the freq. menu can be toggled using `LFN`; there is also a debug menu featuring experimental data that can be toggled using `RFN`
 - Since the PTT/Microphone message capture technique uses Roblox's .Chatted event, when sending a message using Radiocomm, it will also be shown in Roblox chat. That is why we suggest game developers who use Radiocomm to remove chat history, allowing only bubble chat (your messages will still be seen if you're close, but it's also realistic this way)
+- In a recent update, Radiocomm has received support for Roblox's new TextChatService, which allows for messages to be intercepted. Switch to TextChatService for a more suited radio experience.
+- Features a configurable secondary unencrypted SOS Frequency that is always received by devices on other frequencies and only transmittable on it's own frequency. By default `112.7 MHz`
 
 # 🧭 Compass `Compass`
 
@@ -48,7 +50,7 @@ We have implemented a setting `ExplicitFiltering` in both the Client and Server 
 
 >Map application made with ❤️ by Indirecta  
 >Loads 500 instances at a time to prevent crashes, calculates time took from 1 lag spike to the other (experimental)  
->Displays map in 3 modes, one display a blue player indicator with a compass indicator, the other rotating the map directly dependign on the compass orientation, and the last freezing the camera (for now, intended to be a free arrow navigation mode); the modes are toggled using `LFN`  
+>Displays map in 3 modes, one display a blue player indicator with a compass indicator, the other rotating the map directly dependign on the compass orientation, and the last being a free D-PAD navigation mode; the modes are toggled using `LFN`  
 >Also allows for waypoints to be added to the map (in the module configuration, or by editing existing ones using FOSDebug), and loads all of the current server's players' position using colored indicators
 >Displays in the bottom left of the screen an indicator depicting the width of the map shown in real world units.
 
@@ -181,3 +183,22 @@ This section aims to describe best all the Circle applications that aren't inclu
 
 > Experimental application that could have been a core app. Displays a small sun and moon chart with some info that is currently fixed because Roblox  
 > sun times do not change depending on time of year
+
+# ❔ Firewall `RecordFirewall`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/firewall_1.png" width="200px"/>
+
+> A port of the record Firewall Shutters Remote protocol to the iComm with similar design.
+
+- The inside the of the app (module) is structured similarly to that of a firewall remote tool, which makes setup the same as regular devices.
+- In addition to touch the app remote can be controlled using the D-PAD Keys: `UP`/`DOWN` Open/Close; `LEFT`/`RIGHT` Change group
+
+# 💬 Talkie `WalkieTalkie`
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/walkietalkie_1.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/walkietalkie_2.png" width="200px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/walkietalkie_3.png" width="200px"/>
+
+> Experimental & alternative "radio" communication design. A much simpler alternative to the Radiocomm app.
+
+- Press the big button or the `OK` center d-pad key to toggle between muted and listening
+- When the button is gray/listening, it'll listen to what you say in the chat and transmit it to everyone on the same channel and become green
+- The channels are 36 in total starting from 1 and can be changed with the `+` or `-` buttons, or the `UP` `DOWN` `LEFT` `RIGHT` D-Pad keys
