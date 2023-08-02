@@ -33,6 +33,16 @@ const AffiliateList = [
     image: 'img/partners/Scada_Logo.png',
     roblox: 'https://www.roblox.com/groups/5791519/Scada-Control-Systems',
   },
+  {
+    title: 'PIXI',
+    image: 'img/partners/PIXI_Logo_White.png',
+    roblox: 'https://www.roblox.com/groups/32843611/PIXI-Technologies',
+  },
+  {
+    title: 'NetPox',
+    image: 'img/partners/net_group_logo.png',
+    roblox: 'https://discord.gg/sNJpRzEVva',
+  },
 ];
 
 function Feature({image, title, roblox}) {

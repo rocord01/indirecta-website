@@ -6,6 +6,7 @@ slug: /category/-kichain
 # ℹ️ Info
 
 ## 📖 What's KiChain?
+
 KiChain is an experimental project developed by Indirecta that aims to reduce inventory clutter of items like keys, fobs and keycards.  
 At the heart of KiChain is a lightweight server script that handles tool distribution.  
 Equipping the KiChain tool will bring up a second hotbar to pick a tool from, after selecting the tool, it will be equipped while mantaining the hotbar on screen.  

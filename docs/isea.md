@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 7
 ---
 
 # 🔐 iSEA
@@ -46,7 +46,7 @@ The decryption process in the Indirecta algorithm takes a ciphertext string and 
 4. For each pair of characters, add a pseudo-random byte and the previous value variable to the byte value, modulo 256.
 5. Set the previous value variable to the resulting byte value.
 6. Append the resulting byte value to the plaintext string.
-1. Return the plaintext string.
+7. Return the plaintext string.
 
 </details>
 
