@@ -16,7 +16,7 @@ More complex core applications like the Radiocomm app can have their own page.
 <img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/radiocomm_3.png" width="200px"/>
 <img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/radiocomm_4.png" width="200px"/>
 
->Radio-like encrypted messaging app made with ❤️ by Indirecta  
+>Radio-like messaging app made with ❤️ by Indirecta  
 >Allows the user to change frequency up/down 1/.5 MHz, messages are sent in different MessagingService topics depending on frequency, and encrypted with frequency and a key derived from an optional secret using [Indirecta's public encryption algorithm](https://github.com/Indirecta-Technologies/indirectaSEA)  
 
 :::danger

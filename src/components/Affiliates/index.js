@@ -43,6 +43,16 @@ const AffiliateList = [
     image: 'img/partners/net_group_logo.png',
     roblox: 'https://discord.gg/sNJpRzEVva',
   },
+   {
+    title: 'Firetech Industries',
+    image: 'img/partners/firetech_industries_logo_graywhite.png',
+    roblox: 'https://www.roblox.com/groups/10963282/FireTech-Development-Studios#!/about',
+  },
+   {
+    title: 'Exascale',
+    image: 'img/partners/exascale.png',
+    roblox: 'https://www.roblox.com/groups/8536147/Exasale#!/about',
+  },
 ];
 
 function Feature({image, title, roblox}) {

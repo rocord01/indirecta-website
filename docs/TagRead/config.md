@@ -147,21 +147,23 @@ Allows you to change the most important display strings
   
 ## 🚪 Unlock & Relock Functions `FUNCS`
 The essential part to configure.  
-Since TagRead doesn't include any communicating door, you will have to integrate an existing door system's API using these two functions. 
+Since TagRead doesn't include any communicating door, you will have to integrate an existing door system's API using these two functions.
 
 - ### 🔓 `UNLOCK` **function**
+
   Fired when:
   - ✅ NFC authenticates successfully
   - Passcode is correct
-  - One time pass is correct
+  - One time pass is correct  
   The connected door should open when this function is fired.
 - ### 🔒 `RELOCK` **function**
+
   Fired when:
   - ❌ NFC authentication fails
   - Passcode is wrong
   - One time pass is wrong
   - ⏲️ Timeout: max time passes without any input
-  - Max time passes after successful authentication
+  - Max time passes after successful authentication  
   The connected door should close if not already when this function is fired.
 
 :::caution
@@ -171,6 +173,7 @@ TagRead to freeze after attemtping to unlock or relock!
 
 :::
 - ### 💠 `_INTEGRATION_ON_NFC_TOUCH` **function**
+
   Fired when any part touches the NFC Antenna (created only if NFC is enabled)
   This function can be used to integrate other card protocols and make them compatible with TagRead,
   implement whitelists, blacklists, the possibilities are endless!
@@ -181,56 +184,64 @@ TagRead to freeze after attemtping to unlock or relock!
   but TagRead won't show any unlock or fail message.
 
 ## 🔈 Add sound to TagRead
+
 TagRead doesn't plan to include any built-in audios or media.  
 To add sound effects, you will have to create a `Sound` instance, configure it, parent it to any part inside TagRead,  
 and handle sound playing inside the `UNLOCK` & `RELOCK` functions.
 
 ## 💠 Use the On NFC Touch Integration
+
 This section will include some examples for _ON_NFC_TOUCH integrations:  
 
 ### 🔮 Try your luck!
-This integration will unlock the connected system with a random 50/50 chance!  
+
+This integration will unlock the connected system with a random 50/50 chance!
+
 ```js
 ["_INTEGRATION_ON_NFC_TOUCH"] = function(self, script, part, config, notify)
-	-- Fired when NFC Antenna is touched by any part
-	notify(true, "🔮", "Let's test your luck!", "")
-	wait(2)
-	if math.random(0,1) > 0 then return false end
+  -- Fired when NFC Antenna is touched by any part
+  notify(true, "🔮", "Let's test your luck!", "")
+  wait(2)
+  if math.random(0,1) > 0 then return false end
 
-	return true
+  return true
 end,
 ```
+
 ### 🪪 Whitelist
-This integration will halt the NFC Authentication procedure if the player is not in the whitelist! 
+
+This integration will halt the NFC Authentication procedure if the player is not in the whitelist!
+
 ```js
 ["_INTEGRATION_ON_NFC_TOUCH"] = function(self, script, part, config, notify)
-	-- Fired when NFC Antenna is touched by any part
-	local whitelist = {"Lxi099"}
+  -- Fired when NFC Antenna is touched by any part
+  local whitelist = {"Lxi099"}
 
-	local function FindPlayerAncestor(part)
-		local parent = part.Parent
-		if parent == nil then
-			return nil
-		end
-		if parent:FindFirstChild("Humanoid") then
-			return game:GetService("Players"):GetPlayerFromCharacter(parent)
-		elseif parent:IsA("DataModel") then
-			return nil
-		else
-			return FindPlayerAncestor(parent)
-		end
-	end
+  local function FindPlayerAncestor(part)
+    local parent = part.Parent
+    if parent == nil then
+      return nil
+    end
+    if parent:FindFirstChild("Humanoid") then
+      return game:GetService("Players"):GetPlayerFromCharacter(parent)
+    elseif parent:IsA("DataModel") then
+      return nil
+    else
+      return FindPlayerAncestor(parent)
+    end
+  end
 
-	local Player = FindPlayerAncestor(part)
-	if Player and table.find(whitelist, Player.Name) then 
-		return nil -- Continue with auth procedure
-	else
-		return "" -- Do absolutely nothing if the player is not whitelisted
-	end
+  local Player = FindPlayerAncestor(part)
+  if Player and table.find(whitelist, Player.Name) then 
+    return nil -- Continue with auth procedure
+  else
+    return "" -- Do absolutely nothing if the player is not whitelisted
+  end
 end,
 ```
 
 ## ❌ Error Screen
+
 <img alt="tagread design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/tagread/media/error.png" height="200px"/>  
 
 When a critical error is encountered, TagRead will completely halt it's own script to prevent security issues from arising.  

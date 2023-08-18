@@ -15,7 +15,7 @@ Make sure to save the files as `.rbxmx` and not `.rbxmx.txt` or you won't be abl
 
 > - Step 1: **https://github.com/Indirecta-Technologies/fosd/tree/main/icomm/src/tool_devices** Open the `iComm-wmesh.rbxm` tool device GitHub Page
 > - Download file: **Click on the `Raw` button and then press `Ctrl+S`, save somewhere and then drag the file into studio**  
-> - Step 2: **https://github.com/Indirecta-Technologies/fosd/tree/main/icomm/src/core_releases** Open the `Indirecta_iCommGUI-alpharevX.X.X.rbxm` core release GitHub Page
+> - Step 2: **https://github.com/Indirecta-Technologies/fosd/tree/main/icomm/src/core_releases** Open the `Indirecta_iCommGUI-betarevX.X.X.rbxm` core release GitHub Page
 > - Download file: **Click on the `Raw` button and then press `Ctrl+S`, save somewhere and then drag the file into studio**  
 > - Step 3: Put the Tool (first file you've downloaded) into StarterTools
 > - Step 4: Put the GUI (second file) inside the Tool

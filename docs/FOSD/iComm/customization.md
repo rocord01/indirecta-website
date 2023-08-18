@@ -11,6 +11,7 @@ Most iComm customizations will feature a custom keyboard, such as the current of
 It features a drag and release thumbstick instead of the original DPAD, and colored keys for the software and function keys along with bigger menu and back buttons.
 <img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/default_keyboard.png" height="300px"/>
 <img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/unicationgseries_keyboard.png" height="300px"/>
+<img alt="icomm design" src="https://raw.githubusercontent.com/Indirecta-Technologies/fosd/main/icomm/media/qwerty_keyboard.png" height="300px"/>
 
 ## Ⓜ️ Mods
 Mods are unique experiences, combinations of different modified components, with different styles and functionality such as application presets.
