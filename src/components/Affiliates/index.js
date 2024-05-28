@@ -53,6 +53,11 @@ const AffiliateList = [
     image: 'img/partners/exascale.png',
     roblox: 'https://www.roblox.com/groups/8536147/Exasale#!/about',
   },
+  {
+    title: 'rocord01 studios',
+    image: 'img/partners/rocord01-studios.png',
+    roblox: 'https://discord.gg/KMBS2aPbUv',
+  },
 ];
 
 function Feature({image, title, roblox}) {
